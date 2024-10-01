@@ -16,6 +16,6 @@ for i, media in enumerate(medias):
     if i % 5 == 0:
         Client.user_follow(media.user.pk)
         print(f"Followed user {media.user.username}")
-        Client.media_comment(media.id, "Awesome posr")
+        Client.media_comment(media.id, "Awesome post")
         comment = random.choice(comments)
         print(f"Commented {comment} under post number {i+1}")
